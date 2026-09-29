@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro de clientes</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="pagina">
+    <header class="encabezado">
+      <span class="etiqueta">GESTIÓN DE CLIENTES</span>
+      <h1>Registro de clientes</h1>
+      <p>Ingresa los datos para añadir un cliente a la lista de este navegador.</p>
+    </header>
+
+    <section class="tarjeta" aria-labelledby="titulo-formulario">
+      <div class="titulo-seccion">
+        <div><h2 id="titulo-formulario">Datos personales</h2><p>Todos los campos son obligatorios.</p></div>
+      </div>
+      <form id="formulario" novalidate>
+        <div class="campos">
+          <div class="campo"><label for="cedula">Cédula <span>: </span></label><input id="cedula" name="cedula" type="text" inputmode="numeric" maxlength="10" autocomplete="off" placeholder="10 dígitos" required></div>
+          <div class="campo"><label for="nombre">Nombre completo <span>: </span></label><input id="nombre" name="nombre" type="text" maxlength="30" autocomplete="name" placeholder="Ej. Ana Pérez" required></div>
+          <div class="campo ancho"><label for="direccion">Dirección <span>: </span></label><input id="direccion" name="direccion" type="text" maxlength="50" autocomplete="street-address" placeholder="Calle, número y ciudad" required></div>
+          <div class="campo"><label for="telefono">Teléfono celular <span>: </span></label><input id="telefono" name="telefono" type="tel" inputmode="numeric" maxlength="10" autocomplete="tel" placeholder="10 dígitos" required></div>
+          <div class="campo"><label for="correo">Correo electrónico <span>: </span></label><input id="correo" name="correo" type="email" autocomplete="email" placeholder="ejemplo@correo.com" required></div>
+        </div>
+        <p id="mensaje" class="mensaje" role="status" aria-live="polite"></p>
+        <button class="boton primario" type="submit">+ Registrar cliente</button>
+      </form>
+    </section>
+
+    <section class="tarjeta" aria-labelledby="titulo-lista">
+      <div class="titulo-seccion lista-titulo">
+        <div><h2 id="titulo-lista">Clientes registrados <span id="contador" class="contador">0</span></h2><p>Se guardan localmente en este navegador.</p></div>
+      </div>
+      <div class="tabla-contenedor">
+        <table>
+          <thead><tr><th>Cédula</th><th>Nombre</th><th>Dirección</th><th>Celular</th><th>Correo</th></tr></thead>
+          <tbody id="lista-clientes"></tbody>
+        </table>
+        <p id="sin-clientes" class="vacio">Todavía no hay clientes registrados.</p>
+      </div>
+      <button id="exportar" class="boton secundario" type="button" disabled>↓ Descargar clientes.json</button>
+    </section>
+  </main>
+</body>
+</html>
