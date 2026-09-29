@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora | Cinco operaciones</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="contenedor">
+    <header class="encabezado">
+      <h1>Calculadora de <span>5 operaciones</span></h1>
+      <p>Ingresa dos números y descubre qué ocurre en cada iteración del bucle.</p>
+    </header>
+
+    <section class="tarjeta" aria-labelledby="titulo-entrada">
+      <div class="titulo-seccion">
+        <div><h2 id="titulo-entrada">Ingresa los valores</h2>
+          <p>Se aceptan números enteros y decimales.</p></div>
+      </div>
+      <form id="formulario">
+        <div class="campos">
+          <label for="numero1">Primer número
+            <input id="numero1" type="number" step="any" placeholder="Ejemplo: 10" required>
+          </label>
+          <label for="numero2">Segundo número
+            <input id="numero2" type="number" step="any" placeholder="Ejemplo: 3" required>
+          </label>
+        </div>
+        <button type="submit">Calcular operaciones <span aria-hidden="true">→</span></button>
+      </form>
+    </section>
+
+    <section class="tarjeta resultados" aria-labelledby="titulo-resultados">
+      <div class="titulo-seccion">
+        <div><h2 id="titulo-resultados">Resultados</h2>
+          <p>Una operación diferente en cada una de las 5 iteraciones.</p></div>
+      </div>
+      <p id="mensaje" class="mensaje">Completa los campos para ver los resultados.</p>
+      <ol id="lista-resultados" class="lista" aria-live="polite"></ol>
+    </section>
+  </main>
+</body>
+</html>
