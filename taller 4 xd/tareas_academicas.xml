@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tareas>
+  <tarea codigo="1791907848332">
+    <titulo>Tarea de bases de datos</titulo>
+    <descripcion>Hacer consultas SQL básicas</descripcion>
+    <fecha>10/13/2026</fecha>
+  </tarea>
+  <tarea codigo="1791907859473">
+    <titulo>Taller de redes</titulo>
+    <descripcion>Configurar una VLAN en Packet Tracer</descripcion>
+    <fecha>10/13/2026</fecha>
+  </tarea>
+  <tarea codigo="1791907872798">
+    <titulo>Informe de auditoría</titulo>
+    <descripcion>Redactar el resumen del informe</descripcion>
+    <fecha>10/13/2026</fecha>
+  </tarea>
+</tareas>

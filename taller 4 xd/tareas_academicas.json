@@ -1,0 +1,20 @@
+[
+  {
+    "codigo": "1791907848332",
+    "titulo": "Tarea de bases de datos",
+    "descripcion": "Hacer consultas SQL básicas",
+    "fecha": "10/13/2026"
+  },
+  {
+    "codigo": "1791907859473",
+    "titulo": "Taller de redes",
+    "descripcion": "Configurar una VLAN en Packet Tracer",
+    "fecha": "10/13/2026"
+  },
+  {
+    "codigo": "1791907872798",
+    "titulo": "Informe de auditoría",
+    "descripcion": "Redactar el resumen del informe",
+    "fecha": "10/13/2026"
+  }
+]
