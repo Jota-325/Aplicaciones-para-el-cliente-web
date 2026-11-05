@@ -1,0 +1,28 @@
+TALLER PRÁCTICO: GESTIÓN DE LIBROS
+
+Proyecto basado en la guía proporcionada: HTML, CSS y JavaScript, sin dependencias.
+
+INICIO
+1. Extrae la carpeta completa del ZIP.
+2. Abre index.html en un navegador moderno.
+3. Mantén estilos.css y aplicacion.js en la misma carpeta que index.html.
+
+PRUEBAS
+- Agrega un libro con título y autor.
+- Edita el libro y guarda la actualización.
+- Pulsa Editar y después Cancelar Edición.
+- Recarga la página para comprobar la persistencia.
+- Elimina un libro y acepta la confirmación.
+- Elimina todos los libros y recarga: la tabla debe seguir vacía.
+
+NOTAS
+Los datos se guardan en localStorage del navegador, no en una base de datos ni en el ZIP.
+Usa el mismo navegador y ubicación para las pruebas de persistencia.
+Si el navegador restringe el almacenamiento de archivos locales, usa Live Server
+para abrir la carpeta desde un servidor local y vuelve a realizar las pruebas.
+
+Mejoras respecto al código de la guía:
+- Se guarda también el arreglo vacío al eliminar el último libro.
+- Se rechazan campos que contienen únicamente espacios.
+- Los títulos y autores se muestran como texto, no como HTML.
+- Se manejan errores de lectura y escritura en localStorage.
